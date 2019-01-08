@@ -21,16 +21,11 @@ cache:
 
 env:
   global:
-    - secure: "NAP1KMRX4c/+lS+elVbrMy7XRF65eoYOv7Z6GSEBDc0rZQeRf2X2UIquuIVyjEzenO2x/ECYR8MFu2QKby8h3b+EeLllMizpA9pDituBKM5mKae9zBGAJzcdWm6Mg2xCaZT9H+79FwzDVgUbp2bEdoKuJXLcExdTMJs2534jK7vG961q+oMMoi+AhgZifcT+B6H1NZ8aoeASsHc9YIS7vwG4qgsSiM456y4hpozpOGfayN1i7IRy6+gn//uv+gXXugDmHgambja4qqY58MQtwGUTNNza1GzqbGiyEitDuSX7rrVt3siwheAMvu8JW8avDYeDASaOX8e4Wpvt8HI6KYAsDKRnFz4DIyZMFEfdZ9sCKA/wVvZdWmTbTCnXz2yUoV01VLT8vHSE50xt02MRAnMpbtkBCN3Wx7rRb3fNRnMDfWCGbQYdinJRI+4XGOW3Lkrwpy4h4KTIKcgo70oTUme/joF7IKp17IfcTd+hCYvQ83zqV0QKrZV1aAO9CtoH8j3eeRKpXCEVVqn6sZ8+vvy1b7JhKGYsQMTlyO2AzG6H4Q7QWHZCL8vKH27Cuvhywk0EHnCWZpfF9vM+JK/DadOw+WaZxzX1Zlhg9FvSclq7lOrtNxYrjFm/kSnd6PYcjSB575u5Ed9eINlC4Bbdi5eHQMxITJirS4lox7xf+es="
+    - secure: "NAP1KMRX4c+lS+elVbrMy7XRF65eoYOv7Z6GSEBDc0rZQeRf2X2UIquuIVyjEzenO2xECYR8MFu2QKby8h3b+EeLllMizpA9pDituBKM5mKae9zBGAJzcdWm6Mg2xCaZT9H+79FwzDVgUbp2bEdoKuJXLcExdTMJs2534jK7vG961q+oMMoi+AhgZifcT+B6H1NZ8aoeASsHc9YIS7vwG4qgsSiM456y4hpozpOGfayN1i7IRy6+gnuv+gXXugDmHgambja4qqY58MQtwGUTNNza1GzqbGiyEitDuSX7rrVt3siwheAMvu8JW8avDYeDASaOX8e4Wpvt8HI6KYAsDKRnFz4DIyZMFEfdZ9sCKAwVvZdWmTbTCnXz2yUoV01VLT8vHSE50xt02MRAnMpbtkBCN3Wx7rRb3fNRnMDfWCGbQYdinJRI+4XGOW3Lkrwpy4h4KTIKcgo70oTUmejoF7IKp17IfcTd+hCYvQ83zqV0QKrZV1aAO9CtoH8j3eeRKpXCEVVqn6sZ8+vvy1b7JhKGYsQMTlyO2AzG6H4Q7QWHZCL8vKH27Cuvhywk0EHnCWZpfF9vM+JKDadOw+WaZxzX1Zlhg9FvSclq7lOrtNxYrjFmkSnd6PYcjSB575u5Ed9eINlC4Bbdi5eHQMxITJirS4lox7xf+es="
 
 # The pipe (|) is useful to create multiline scripts
 script:
-  - |
-    mvn clean install sonar:sonar \
-  -Dsonar.projectKey=mehdiabouzaid_sample-application-students \
-  -Dsonar.organization=mehdiabouzaid-github \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=7f0c1c363fafcc27f36ded820e57ac1a303eb0af
+ - mvn sonar:sonar -Dsonar.projectKey=mehdiabouzaid_sample-application-students -Dsonar.organization=mehdiabouzaid-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=7f0c1c363fafcc27f36ded820e57ac1a303eb0af
 
 
 
