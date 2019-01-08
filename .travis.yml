@@ -30,7 +30,7 @@ script:
   -Dsonar.projectKey=mehdiabouzaid_sample-application-students \
   -Dsonar.organization=mehdiabouzaid-github \
   -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=7f0c1c363fafcc27f36ded820e57ac1a303eb0af
+  -Dsonar.login=$SONAR_TOKEN
 
 
 
